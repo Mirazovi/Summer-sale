@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Summer Sale Website</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<!-- -->
+<body>
+    <header>
+        <section class="bg-[#f9f6e2]">
+            <div class="lg:flex justify-between gap-8 items-center lg:w-[80%] m-auto">
+                <div class="p-6">
+                    <h3 class=" text-center">---SALE FEVER---</h3>
+                    <h1 class="text-4xl font-bold py-5">Purchase TK 200 or above & get <span class="text-[#e527b2]">20% off</span></h1>
+                    <div class="flex gap-2 items-center">
+                        <p class="">Use Promo Code</p>
+                    <button class="py-1 px-3 rounded-lg bg-[#e527b2] text-white text-xl">SELL200</button>
+                    </div>
+                    
+                </div>
+                <div class="p-6">
+                    <img src="images/Summer 1.png" alt="">
+                </div>
+            </div>
+        </section>
+    </header>
+    <main class="bg-[#f8f8f8]">
+        <section class="lg:w-[90%] m-auto py-20 ">
+            <div class=" lg:flex justify-between gap-4">
+                <!-- grid-container  -->
+                <div class="w-full">
+                    <h1 class="font-bold text-3xl lg:px-0 px-6 py-4">Kitchenware</h1>
+                    <!-- grid 1 -->
+                    <div class="grid lg:grid-cols-3 grid-cols-1 gap-4 lg:p-0 p-4">
+                        <div onclick="ClickedProductAccessories()" class="lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                            <img class="w-full lg:h-[200px]  bg-[#f3f3f3] rounded-xl p-5" src="images/prod1.png" alt="">
+                            <h1 id="product-1" class="text-2xl font-bold py-2">K. Accessories</h1>
+                            <p  class="text-xl from-neutral-400"><span id="value-1">36.08</span>$</p>
+                        </div>
+                        <div onclick="ClickedProductCrockeries()" class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                            <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod2.png" alt="">
+                            <h1 id="product-2" class="text-2xl font-bold py-2">Crockeries Item</h1>
+                            <p class="text-xl from-neutral-400"><span id="value-2">25.00</span>$</p>
+                        </div>
+                        <div onclick="ClickedProductHomeCooker()" class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                            <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod3.png" alt="">
+                            <h1 id="product-3" class="text-2xl font-bold py-2">Home Cooker</h1>
+                            <p class="text-xl from-neutral-400"><span id="value-3">50.00</span>$</p>
+                        </div>
+                    </div>
+                    <h1 class="font-bold text-3xl lg:px-0 px-6 py-4 mt-6">Sportswear</h1>
+                    <!-- grid 2 -->
+                    <div class="grid lg:grid-cols-3 grid-cols-1 gap-4 lg:p-0 p-4">
+                        <div class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                            <img class="w-full lg:h-[200px]  bg-[#f3f3f3] rounded-xl p-5" src="images/prod4.png" alt="">
+                            <h1 class="text-2xl font-bold py-2">Sports Back Cap</h1>
+                            <p class="text-xl from-neutral-400">36.00<span>$</span></p>
+                        </div>
+                        <div class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                            <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod5.png" alt="">
+                            <h1 class="text-2xl font-bold py-2">Full Jersey Set</h1>
+                            <p class="text-xl from-neutral-400">25.00<span>$</span></p>
+                        </div>
+                        <div class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                            <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod6.png" alt="">
+                            <h1 class="text-2xl font-bold py-2">Sports cates</h1>
+                            <p class="text-xl from-neutral-400">50.00<span>$</span></p>
+                        </div>
+                    </div>
+                    <h1 class="font-bold text-3xl lg:px-0 px-6 py-4 mt-6">Furniture</h1>
+                    <!-- grid  3-->
+                    <div class="grid lg:grid-cols-3 grid-cols-1 gap-4 lg:p-0 p-4">
+                        <div class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                            <img class="w-full lg:h-[200px]  bg-[#f3f3f3] rounded-xl p-5" src="images/prod7.png" alt="">
+                            <h1 class="text-2xl font-bold py-2">Single Relax Chair</h1>
+                            <p class="text-xl from-neutral-400">36.00<span>$</span></p>
+                        </div>
+                        <div class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                            <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod8.png" alt="">
+                            <h1 class="text-2xl font-bold py-2">Children play</h1>
+                            <p class="text-xl from-neutral-400">25.00<span>$</span></p>
+                        </div>
+                        <div class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                            <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod9.png" alt="">
+                            <h1 class="text-2xl font-bold py-2">Flexible Sofa</h1>
+                            <p class="text-xl from-neutral-400">50.00<span>$</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="lg:w-[300px] lg:p-0 p-4 mt-16">
+                    <div class="bg-[#ffffff] p-3 rounded-lg">
+                        <h1 class="text-xl font-bold py-2">Have coupon?</h1>
+                        <div class="flex gap-2">
+                            <input onchange="buttonChange()" id="coupon-input" class="py-1 px-3 rounded-lg bg-[#f3f3f3] w-full" type="text" placeholder="Coupon code">
+                            <button disabled id="Apply-btn" class="py-1 px-3 disabled:opacity-20 rounded-lg bg-[#e527b2] text-white text-xl pr-2">Apply</button>
+                        </div>
+                    </div>
+                    <!-- Calculation part -->
+                     <div class="pt-4 p-4 bg-[#ffffff] mt-4 rounded-lg">
+                        <div id="product-name">
+
+                        </div>
+                        <div>
+                            <hr class="py-2">
+                            <h2 class="text-xl">Total Price : <span id="total-tk">00.00</span>Tk</h2>
+                            <h2 class="text-xl">Discount : <span>00.00</span>Tk</h2>
+                            <h2 class="pb-3 text-xl">Total : <span>00.00</span>Tk</h2>
+                            <hr class="py-2">
+                            <button disabled id="purchase-btn" class="py-1 px-3 disabled:opacity-20 rounded-lg bg-[#e527b2] text-white text-xl w-full">Make Purchase</button>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="main.js"></script>
+</body>
+</html>
