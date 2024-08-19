@@ -61,17 +61,20 @@
                     <h1 class="font-bold text-3xl lg:px-0 px-6 py-4 mt-6">Sportswear</h1>
                     <!-- grid 2 -->
                     <div class="grid lg:grid-cols-3 grid-cols-1 gap-4 lg:p-0 p-4">
-                        <div onclick="ClickedBackCap()" class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                        <div onclick="ClickedBackCap()"
+                            class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
                             <img class="w-full lg:h-[200px]  bg-[#f3f3f3] rounded-xl p-5" src="images/prod4.png" alt="">
                             <h1 id="product-4" class="text-2xl font-bold py-2">Sports Back Cap</h1>
                             <p class="text-xl from-neutral-400"><span id="value-4">36.00</span>$</p>
                         </div>
-                        <div onclick="ClickedJerseySet()" class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                        <div onclick="ClickedJerseySet()"
+                            class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
                             <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod5.png" alt="">
                             <h1 id="product-5" class="text-2xl font-bold py-2">Full Jersey Set</h1>
                             <p class="text-xl from-neutral-400"><span id="value-5">25.00</span>$</p>
                         </div>
-                        <div onclick="ClickedSportsCates()" class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                        <div onclick="ClickedSportsCates()"
+                            class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
                             <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod6.png" alt="">
                             <h1 id="product-6" class="text-2xl font-bold py-2">Sports cates</h1>
                             <p class="text-xl from-neutral-400"><span id="value-6">50.00</span>$</p>
@@ -80,20 +83,23 @@
                     <h1 class="font-bold text-3xl lg:px-0 px-6 py-4 mt-6">Furniture</h1>
                     <!-- grid  3-->
                     <div class="grid lg:grid-cols-3 grid-cols-1 gap-4 lg:p-0 p-4">
-                        <div class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                        <div onclick="handleClickChair()"
+                            class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
                             <img class="w-full lg:h-[200px]  bg-[#f3f3f3] rounded-xl p-5" src="images/prod7.png" alt="">
-                            <h1 class="text-2xl font-bold py-2">Single Relax Chair</h1>
-                            <p class="text-xl from-neutral-400">36.00<span>$</span></p>
+                            <h1 id="product-7" class="text-2xl font-bold py-2">Single Relax Chair</h1>
+                            <p class="text-xl from-neutral-400"><span id="value-7">36.00</span>$</p>
                         </div>
-                        <div class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                        <div onclick="handleChildrenPlay()"
+                            class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
                             <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod8.png" alt="">
-                            <h1 class="text-2xl font-bold py-2">Children play</h1>
-                            <p class="text-xl from-neutral-400">25.00<span>$</span></p>
+                            <h1 id="product-8" class="text-2xl font-bold py-2">Children play</h1>
+                            <p class="text-xl from-neutral-400"><span id="value-8">25.00</span>$</p>
                         </div>
-                        <div class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
+                        <div onclick="handleFlexibleSofa()"
+                            class=" lg:p-2 p-6 lg:m-0 my-4 mx-2 text-center rounded-lg bg-[#ffffff]">
                             <img class="w-full  lg:h-[200px] bg-[#f3f3f3] rounded-xl p-5" src="images/prod9.png" alt="">
-                            <h1 class="text-2xl font-bold py-2">Flexible Sofa</h1>
-                            <p class="text-xl from-neutral-400">50.00<span>$</span></p>
+                            <h1 id="product-9" class="text-2xl font-bold py-2">Flexible Sofa</h1>
+                            <p class="text-xl from-neutral-400"><span id="value-9">50.00</span>$</p>
                         </div>
                     </div>
                 </div>
@@ -101,6 +107,7 @@
                     <div class="bg-[#ffffff] p-3 rounded-lg">
                         <h1 class="text-xl font-bold py-2">Have coupon?</h1>
                         <div class="flex gap-2">
+
                             <input onchange="buttonChange()" id="coupon-input"
                                 class="py-1 px-3 rounded-lg bg-[#f3f3f3] w-full" type="text" placeholder="Coupon code">
                             <button onclick="ClickedApplyBtn()" disabled id="Apply-btn"
@@ -118,31 +125,36 @@
                             <h2 class="text-xl">Discount : <span id="discount-value">00.00</span>Tk</h2>
                             <h2 class="pb-3 text-xl">Total : <span id="total-value">00.00</span>Tk</h2>
                             <hr class="py-2">
-                            <button onclick="my_modal_1.showModal()" disabled id="purchase-btn"
+                            <button onclick="my_modal_5.showModal()" disabled id="purchase-btn"
                                 class="py-1 px-3 disabled:opacity-20 rounded-lg bg-[#e527b2] text-white text-xl w-full">Make
                                 Purchase</button>
-                            <!-- Open the modal using ID.showModal() method -->
-                           
-                            <dialog id="my_modal_1" class="modal w-[300px] mx-auto">
-                                <div class="modal-box">
-                                    <h3 class="text-lg font-bold">Hello!</h3>
-                                    <p class="py-4">Press ESC key or click the button below to close</p>
-                                    <div class="modal-action">
-                                        <form method="dialog">
-                                            <!-- if there is a button in form, it will close the modal -->
-                                            <button onclick="GoToHome()" class="btn">Go Home</button>
-                                        </form>
-                                    </div>
-                                </div>
-                            </dialog>
                         </div>
+                        <!-- Open the modal using ID.showModal() method -->
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box text-center">
+                                <div class="flex justify-center items-center">
+                                    <img class="w-28" src="/images/congo.png" alt="">
+                                </div>
+                                <h3 class="text-4xl pt-2 font-bold ">Congratulations</h3>
+                                <p class="py-4">Your Purchase the product</p>
+                                <div class="modal-action">
+                                    <form method="dialog" class="flex w-full justify-center items-center">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button class="btn" onclick="GoToHome()">Go Home</button>
+                                        
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
                     </div>
+
                 </div>
             </div>
         </section>
     </main>
-    <script src="main.js"></script>
-   
+    <!-- <script src="main.js"></script> -->
+    <script src="reapeat.js"></script>
+
 </body>
 
 </html>
